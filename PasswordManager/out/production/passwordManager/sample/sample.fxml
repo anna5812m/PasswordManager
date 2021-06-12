@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="400.0" prefWidth="600.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="txt" prefHeight="85.0" prefWidth="207.0" />
+            <Button mnemonicParsing="false" onAction="#onStart" text="ОК" />
+            <TableView fx:id="table" prefHeight="302.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="tblLogin" prefWidth="75.0" text="Логин" />
+                <TableColumn fx:id="tblPassword" prefWidth="75.0" text="Пароль" />
+                  <TableColumn fx:id="tblURL" prefWidth="75.0" text="URL" />
+                  <TableColumn fx:id="tblNameSite" prefWidth="75.0" text="Имя сайта" />
+                  <TableColumn fx:id="tblComment" prefWidth="106.199951171875" text="Комментарий" />
+                  <TableColumn fx:id="tblCategory" prefWidth="81.0" text="Категория" />
+                  <TableColumn fx:id="tblDate" prefWidth="111.0" text="Дата регистрации" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

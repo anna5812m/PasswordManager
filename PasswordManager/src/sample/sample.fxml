@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="510.0" prefWidth="865.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox prefHeight="510.0" prefWidth="905.0">
+         <children>
+            <TableView fx:id="tableView" prefHeight="243.0" prefWidth="866.0">
+              <columns>
+                <TableColumn fx:id="colUser" prefWidth="128.0" text="Имя пользователя" />
+                <TableColumn fx:id="colPass" prefWidth="119.60000610351562" text="Пароль" />
+                  <TableColumn fx:id="colURL" prefWidth="121.79997253417969" text="URL сайта" />
+                  <TableColumn fx:id="colName" prefWidth="135.0" text="Название сайта" />
+                  <TableColumn fx:id="colCom" minWidth="0.0" prefWidth="128.0" text="Комментарий" />
+                  <TableColumn fx:id="colCat" minWidth="0.0" prefWidth="124.79998779296875" text="Категория" />
+                  <TableColumn fx:id="colDate" minWidth="0.0" prefWidth="103.5999755859375" text="Дата" />
+              </columns>
+            </TableView>
+            <HBox prefHeight="270.0" prefWidth="866.0">
+               <children>
+                  <VBox prefHeight="270.0" prefWidth="278.0">
+                     <children>
+                        <HBox prefHeight="275.0" prefWidth="278.0">
+                           <children>
+                              <VBox prefHeight="270.0" prefWidth="124.0">
+                                 <children>
+                                    <Label text="Имя пользователя">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Пароль">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" top="8.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="URL сайта">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" top="8.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Название сайта">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" top="8.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Комментарий">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" top="8.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Категория">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" top="8.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Дата">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" top="8.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="270.0" prefWidth="155.0">
+                                 <children>
+                                    <TextField fx:id="us">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="pass">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="url">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="ns">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="com">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="cat">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="dat">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Button mnemonicParsing="false" onAction="#on_CLick" text="Добавить" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Button mnemonicParsing="false" onAction="#on_Generate" prefHeight="30.0" prefWidth="184.0" text="Сгенерировать пароль">
+                     <HBox.margin>
+                        <Insets left="20.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children></VBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
